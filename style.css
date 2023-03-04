@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body{
+    margin: 0;
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+h1 {
+    font-size: 60px;
+    line-height: 64px;
+    color: #fff;
+    margin-top: 37px;
+    margin-bottom: 15px;
+  }
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+  }
+  button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid;
+    outline: none;
+    transition: 0.2s;
+  }
+
+#header{
+    background-color: #262626;
+    position: fixed;
+    top: -60px;
+    display: block; 
+    transition: top 0.5s;
+    width: 100% !important;
+    margin: auto;
+    z-index: 10;
+}
+
+#wrapper{
+    text-align: center;
+    background: #003329;
+    padding: 0 50px 0;
+    z-index: -1;
+}
+
+#wrapper h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+#wrapper p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.parallax{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+
+}
+
+.menu{
+    margin: auto;
+    width: 700px;
+}
+ 
+.menu a{
+    position: relative;
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.menu a:hover{
+    background-color: deepskyblue;
+    color: #fff;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("pexels-photo-1483024.jpeg");
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #banner h4{
+    color: #fff;
+    font-size: 16px;
+  }
+  #banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 28px 0;
+  }
+  #banner h2 span{
+    color: #f1ff55;
+  }
+  #banner button:hover{
+    margin-top: 40px;
+    background: #838802;
+    color: #fff;
+  }
+
+  .container{
+    position: absolute;
+    perspective: 1000px;
+    margin: 50px 56px 74px 504px;
+  }
+
+ 
+  .container .slide-container .slide{
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 5px 10px #3337;
+    width: 450px;
+    padding: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .container .slide-container .slide .icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 90px;
+    color: #3498db;
+  }
+
+.container .slide-container .slide .user{
+  display: flex;
+  align-items: center;
+}
+
+.container .slide-container .slide img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.container .slide-container .slide .user .user-info h3{
+  color: #333;
+  font-size: 20px;
+}
+
+.container .slide-container .slide .user .user-info .stars{
+  color: #f4f02e;
+  font-size: 15px;
+}
+
+.container .slide-container .slide .text1{
+  color: #333;
+  font-size: 14px;
+  padding-top: 14px;
+  font-style: italic;
+}
+
+.container .slide-container{
+  display: none;
+}
+
+.container .slide-container.active{
+  display: block;
+}
+
+.container #next,
+.container #prev{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #3337;  
+}
+
+#next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #3337;  
+}
+
+
