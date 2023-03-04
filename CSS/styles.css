@@ -1,0 +1,9 @@
+*{
+    background-image: url(/Images/img1.jfif)  ;
+    background-position: no-repeat;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    size: 100px;
+}
