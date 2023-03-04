@@ -1,0 +1,34 @@
+#downloadApp{
+    background-color: rgb(10, 2, 23);
+    color: white;
+    height: 100%;
+}
+video{
+    position: relative;
+    border-radius: 70px;
+}
+
+.download-button{
+    margin:5% 4% 5% 0;
+}
+
+td{
+    padding: 100px;
+    text-align: justify;
+}
+p{
+    opacity: 0.8;
+}
+h1{
+    text-align: left;
+    padding-bottom: 25px;
+    color: white;
+}
+.Down-app{
+    text-align: center;
+    margin-top: 0%;
+    font-weight: 900;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+}

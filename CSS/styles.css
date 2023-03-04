@@ -7,7 +7,6 @@
 .title_hiw h2{
     font-size: 28px;
     font-weight: 800;
-    /* margin-top: 70px; */
     text-align: center;
     text-transform: uppercase;
     padding-top: 80px;
@@ -30,7 +29,6 @@
 .img-2{
     height: 250px;
     border-radius: 115px;
-    /* position: absolute; */
 }
 .img-3{
     height: 250px; 
@@ -39,7 +37,6 @@
 
 }
 .img-4{
-    /* padding-top: 10px; */
     margin-top: 63px;
     height: 250px;
     border-radius: 50px;
