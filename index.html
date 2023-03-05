@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/download.css">
+    <!-- Fcvicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title></title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="menu">
+            <a href="#parallax">Home</a>
+            <a href="#banner">Partner</a>
+            <a href="#HIW">How It Works</a>
+            <a href="#downloadApp">Download</a>
+            <a href="https://indiasomeday.com/en/youre-not-alone-tips-for-travelling-with-strangers/">Safety</a>
+        </div>
+    </section>
+    <section id="parallax" class="parallax">
+        <img src="Images/Parallax/hill1.png" id="hill1">
+        <img src="Images/Parallax/hill2.png" id="hill2">
+        <img src="Images/Parallax/hill3.png" id="hill3">
+        <img src="Images/Parallax/hill4.png" id="hill4">
+        <img src="Images/Parallax/hill5.png" id="hill5">
+        <img src="Images/Parallax/tree.png" id="tree">
+        <h2 id="text">Roam Mates</h2>
+        <img src="Images/Parallax/leaf.png" id="leaf">
+        <img src="Images/Parallax/plant.png" id="plant">
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h1>FIND TRAVEL BUDDIES</h1>
+        <h2>To <span class="red">roam</span> the planet</h2>
+        <a href="Pages/SignUp.html"><button class="normal">Find a travel buddy</button></a>
+
+    </section>
+    <div id="HIW">
+        <h1 class="head_hiw">Curious About How It Works</h1>
+        <p>Don't worry, we have got you covered.</p>
+        <a href="Pages/howItWorks.html">
+            <button>Click here to know more</button>
+        </a>
+    </div>
+
+    <div id="downloadApp">
+        <h1 class="Down-app">Download Our App</h1>
+        <table class="table-class">
+            <tr class="tb-row">
+                <td>
+                    <h1>Best Companion for your memorable journey</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim obcaecati dignissimos
+                        reprehenderit
+                        dolor repellat, ipsa illo quos, at culpa eum provident? Officiis dolores tempore autem doloribus
+                        sit
+                        libero ad modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iste corporis quas
+                        quae
+                        blanditiis velit dignissimos doloribus. Unde perspiciatis eos voluptas expedita in praesentium,
+                        eaque quisquam repudiandae animi rem nemo!</p>
+                    <button type="button" class="btn btn-dark download-button"><i class="fa-brands fa-apple"></i>
+                        Download</button>
+                    <button type="button" class="btn btn-outline-light download-button"><i
+                            class="fa-brands fa-google-play"></i>
+                        Download</button>
+                </td>
+                <td>
+                    <video src="Video/VID-20230305-WA0000_1.mp4" loop autoplay></video>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer id="footer">
+        <div>
+            <p>Designed by team : <br><br>The Trojan Horse</p><br>
+            <ol>
+                <li>Suraj Shinde</li>
+                <li>Aditya Repe</li>
+                <li>Soham Rane</li>
+                <li>Avishkar Varpe</li>
+            </ol>
+            <p>During Clash-of-Codes 2023 (DJSCE)</p>
+        </div>
+    </footer>
+
+
+    <script src="Js/script.js"></script>
+
+
+    <script>
+        window.onscroll = function () {
+            scroll();
+        };
+
+        function scroll() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("header").style.top = "0";
+            }
+            else {
+                document.getElementById("header").style.top = "-60px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
