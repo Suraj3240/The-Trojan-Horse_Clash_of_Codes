@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="CSS/signup1.css">
+</head>
+
+<body>
+  <div class="sign">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png">
+    <h1>Start Exploring</h1>
+    <form>
+      <input type="email" class="input-box" placeholder="Your Email">
+      <input type="password" class="input-box" placeholder="Your Password">
+
+      <button class="sign-btn"><a href="#">Login</a></button>
+      <hr>
+      <p class="or">OR</p>
+      <button class="google-btn" id="login">Login with Google</button>
+    </form>
+  </div>
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+  import { signInWithRedirect, getAuth, GoogleAuthProvider, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA3Kv6rIevXuhq4X4kPJt7NbsjUCMYJrNE",
+    authDomain: "cochackathon-e52f1.firebaseapp.com",
+    projectId: "cochackathon-e52f1",
+    storageBucket: "cochackathon-e52f1.appspot.com",
+    messagingSenderId: "36792479953",
+    appId: "1:36792479953:web:ca636049836cb9ba2a55f0",
+    measurementId: "G-K1GDX9B08F"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const provider = new GoogleAuthProvider(app);
+  const auth = getAuth(app);
+  login.addEventListener('click'), (e) => {
+    signInWithRedirect(auth, provider);
+    getRedirectResult(auth)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access Google APIs.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+
+        // The signed-in user info.
+        const user = result.user;
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
+  }
+</script>
+
+</html>
