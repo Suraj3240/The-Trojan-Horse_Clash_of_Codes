@@ -23,4 +23,4 @@ Tech Stack Used:
 - CSS
 - Js
 
-Website Link: [Click Here](the-trojan-horse-clash-of-codes-c2ztci323-suraj3240.vercel.app)
+Website Link: [Click Here](https://the-trojan-horse-clash-of-codes-c2ztci323-suraj3240.vercel.app/)
