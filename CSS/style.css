@@ -54,10 +54,12 @@ button.normal{
     position: fixed;
     top: -60px;
     display: block; 
-    transition: top 0.5s;
-    width: 100% !important;
+    transition: top 0.7s;
+    /* width: 100% !important; */
+    width: 100%;
     margin: auto;
     z-index: 10;
+    height: 55px;
 }
 
 #wrapper{
@@ -91,12 +93,58 @@ button.normal{
 
 
 #text{
-    position: absolute;
-    font-size: 5em;
-    color: #fff;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-
+  position:absolute;
+  /* font-size: 5em; */
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  height: 500px;
 }
+.text1{
+  font-size: 3rem;
+  color: rgb(235, 171, 33);
+}
+.text2{
+  font-size: 1.5rem;
+  margin: 67px -31px;
+  color: #cae4e0;
+  text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;position: absolute;
+                        
+}
+.text3{
+  position: absolute;
+  margin: 194px -447px;
+  width: 150%;
+  font-size: 7rem;
+  color: #f45f24;
+}
+/* #text1{
+  position:absolute;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-bottom: 100px;
+}
+#text2{
+  position:absolute;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-top: 25px;
+}
+#text3{
+  position:absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-top: 150px;
+} */
 
 .parallax img{
     position: absolute;
@@ -109,13 +157,13 @@ button.normal{
 
 .menu{
     margin: auto;
-    width: 700px;
+    width: 100%;
 }
  
 .menu a{
     position: relative;
-    float: left;
-    display: block;
+    float: none;
+    display: inline-block;
     color: #fff;
     text-align: center;
     padding: 15px;
@@ -124,11 +172,15 @@ button.normal{
     text-transform: uppercase;
     font-weight: 900;
     font-style: italic;
+    margin: 0 60px;
 }
 
 .menu a:hover{
     background-color: deepskyblue;
-    color: #fff;
+    transition: 0.5s;
+    color: #131211;
+    text-decoration: underline;
+    text-decoration-color: rgb(244, 242, 238);
 }
 
 #banner{
